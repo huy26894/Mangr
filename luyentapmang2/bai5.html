@@ -11,12 +11,18 @@
      
         let str = prompt("Nhap vao chuoi 1");
         let array =prompt("Nhap vao chuoi 2");
+        let pos = 0;
+        for (let i=0;i<str.length;i++) {
+            if (str[i] === array[i]) {
+                pos = pos + 1;
+            }  
+        }
+        if (pos === (str.length) && pos === (array.length)) {
+            alert("Hai mang nay giong nhau");
+        } else
+        alert ("Hai mang nay khac nhau");
         
-            if (str=== array) {
-                alert("2 chuoi nay giong nhau");
-            }
-            else
-            alert("2 chuoi nay khac nhau");
+            
             
     </script>
 </body>
